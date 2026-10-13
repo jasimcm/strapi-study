@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post",
+    "description": "A simple blog-style post"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 120
+    },
+    "content": {
+      "type": "text"
+    },
+    "author": {
+      "type": "string",
+      "default": "Anonymous"
+    }
+  }
+}
